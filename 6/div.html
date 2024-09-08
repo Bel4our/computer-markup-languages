@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            border: 1px black solid;
+            padding: 50px;
+            margin: 20px;}
+        .first{background-image: linear-gradient( to bottom, blue, red);}
+        .second{background-image: repeating-linear-gradient(45deg,  red, red 5px,blue 5px,blue 10px)}
+        .third{ background-image: radial-gradient(yellow, green)}
+        .four{background: repeating-radial-gradient(green, green 6px, yellow 6px, yellow 12px );}
+        .five{ background-image: radial-gradient(yellow, green, transparent), linear-gradient(to bottom, blue , magenta);}
+        .six{background-image: linear-gradient(to right, yellow, green, transparent),
+             linear-gradient(to top, magenta 10px,blue,white 30px,black);}  
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{list-style-type: none; margin-top: 100px; margin-left: 450px}
+        nav li{display: inline; border: 1px solid black; padding: 10px; text-align: center;}
+        nav ul li {
+                     display: inline-block;
+                  }
+       
+        ul{display: inline; padding: 0px; position: relative;}
+
+         ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            nav ul li a {
+             display: block;
+            text-decoration: none;}
+                .cont:hover .menu {
+             display: block;}
+            .menu {
+             display: none;
+             position: absolute;
+             border: 1px solid black;
+             margin-top: 10px;
+             left: 0px; }
+              .menu li {
+              display: block;
+                  }
+            .menu li:hover {
+                      background-color: grey;
+                }
+             .first, .third,.fourth, .cont{padding-top: 16px;  padding-left: 40px; padding-right: 40px; }
+             .first, .third,.fourth{padding-bottom: 23px; }
+             a{padding-left: 30px; padding-bottom: 12px;}
+             .perv{background: url(facultet.png) no-repeat 0 0;}
+             .vtor{background: url(facultet.png) no-repeat 0 0; }
+             .vtor:hover{background-position: 0 -30px;}
+             .tret{background: url(facultet.png) no-repeat 0 0; }
+             .tret:hover{background-position: 0 -90px;}
+             .chetv{background: url(facultet.png) no-repeat 0 0; }
+             .chetv:hover{background-position: 0 -60px;}
+            
+              
+    </style>
+</head>
+<body>
+    <nav>
+        <li class="first"><a class="perv">БГТУ</a></li>
+
+
+       <ul class="con">
+                 <li class="cont">    
+                   <a class="vtor">ФИТ</a>
+                         <ul class="menu">
+                               <li><a href="https://isit.belstu.by/">Кафедра ИСиТ</a></li>
+                               <li><a href="https://belstu.by/fakultety/fit/ivd/">Кафедра ИиВД</a></li>
+                               <li><a href="https://belstu.by/fakultety/fit/pi/">Кафедра ПИ</a></li>
+                         </ul>  
+                 </li>
+        </ul>
+
+
+        <li class="third"><a class="tret">ПиМ</a></li>
+        <li class="fourth"><a class="chetv">ХТиТ </a></li>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Caveat';
+            src: url(fonts/Caveat.woff) format(woff);}
+        @font-face {
+             font-family: 'Exo2';
+            src: url(fonts/Exo2.woff) format(woff);}
+        @font-face { 
+            font-family: 'Comfortaa';
+            src: url(fonts/Comfortaa.ttf) format(truetype);}
+        h1{font-family:'Caveat';
+            margin-bottom: 0px;
+            text-align: center;
+            font-style: bold;
+            text-transform: small-caps;
+            font-size: 45px;
+            text-shadow: 1px 0 10px indigo;
+           
+
+        }
+        h2{font-family:'Exo2';
+        margin-top: 0.2rem;
+        margin-bottom: 1.2em;
+        text-indent: 25px;
+        text-align: left;
+        }
+        p{font-family:'Comfortaa';
+          text-align: justify;
+          text-indent: 25px;
+          margin-top:0px;
+          margin-bottom: 0px;
+          font-size: 20px;
+          line-height: 200%;
+        }
+        p::first-letter
+        {background: hsla(275, 100%, 10%, 1);
+         font-style: bold;
+         color: white;
+         font-size: 45px;
+        }
+        ol{color:black;
+           font-family:'Comfortaa';
+           font-size: 20px;
+           line-height: 200%;
+          }
+          
+        ol li {
+            list-style-type: none;
+            counter-increment: item; 
+              }
+             ol li:before {
+               content: counter(item, upper-roman) '.' ; 
+               color: blue;
+           }
+        .otstup{margin-bottom: 0;}
+          #line::first-line
+            {color: red;
+             text-indent: 25px;
+            }
+            #line{text-indent: 25px;
+                  font-size: 20px;
+                  
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>Космические объекты</h1>
+        <h2>Астероиды</h2>
+            <p>Астероиды — самые многочисленные объекты в Солнечной системе.
+                 Множество из них уже классифицировано, хотя ещё больше остаётся
+                  неизвестным. Учёные считают, что на некоторых астероидах могут 
+                  таиться бесценные сокровища…</p>
+            <p>Одна из теорий вымирания динозавров гласит, что эти доисторические 
+                гиганты вымерли из-за удара крупного астероида.Некоторые достаточно 
+                крупные астероиды, подобно планетам, имеют свои спутники. Пример — астероид
+                 Ида и его спутник Дактиль. Внешние и внутренние планеты Солнечной системы 
+                 разделены астероидным поясом.</p>
+        
+        <h2>Кометы</h2>
+            <p>Кометы - это наиболее необычные по своему виду небесные объекты, которые иногда
+                 доступны для наблюдений невооруженным глазом. Они привлекали внимание человека 
+                 с глубокой древности. Вместе с астероидами и метеорными телами их относят к малым 
+                 телам Солнечной системы. Характерной особенностью комет является то, что при сближении 
+                 с Солнцем у них появляется и увеличивается хвост, направленный всегда в сторону от Солнца.</p>
+        <h2 class="otstup">Интересне факты про космос</h2>
+        <ol>
+            <li> У Меркурия есть хвост</li>
+            <li> На Луне похоронен человек</li>
+            <li> Существует планета, предположительно состоящая из алмазов</li>
+            <li> На Сатурне есть шестиугольный шторм</li>
+            <li> Фигурки LEGO отправили на орбиту Юпитера</li>
+        </ol>
+        
+     <p id="line">   Космос – это не пустота: он пронизан различными излучениями, а также содержит частицы газа,
+         пыли и другой материи.<br> С Земли мы можем наблюдать планеты, звезды и галактики, которые находятся 
+         в пределах 46,5 миллиардов световых лет в любом направлении от нашей планеты. Эта часть космоса 
+         называется обозримой Вселенной.
+    </p>
+</body>
+</html>

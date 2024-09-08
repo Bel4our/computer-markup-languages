@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+           }
+        img{width: 500px; height: 300;}
+        .mercury:hover{transform: scale(0.5);}
+        .venus:hover{transform:rotate(45deg)}
+        .earth:hover{transform: translate(50px,0px);}
+        .mars:hover{transform: rotate(-20deg);}
+        h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+    </style>
+</head>
+<body>
+    <h1>Планеты</h1>
+    <div><img src="меркурий.jpg" class="mercury"></div>
+    <div><img src="венера.jpeg" class="venus"></div>
+    <div><img src="земля.jpg" class="earth"></div>
+    <div><img src="марс.jpg" class="mars"></div>
+</body>
+</html>

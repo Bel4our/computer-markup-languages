@@ -1,0 +1,10 @@
+@import url(style.css);
+@media(max-width: 768px)
+{
+figcaption{
+    color: blue;
+}}
+img {
+    width: 100%;
+    max-width: 100%;  
+}

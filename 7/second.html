@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 350px;
+            margin-left: 20px;
+        }
+        div{text-align: center;
+            margin-top: 50px;
+            display: inline-block;}
+        .tank{transform: rotateX(40deg);}
+        .first{perspective: 800px;}
+        .istreb{transform: rotateY(40deg);}
+        .second{perspective: 700px}
+        .helicopter{transform: rotateX(40deg);}
+        .third{perspective:500px;}
+        .ship{transform: rotateY(-40deg);}
+        .fourth{perspective: 600px;}
+        h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    to{opacity: 0.8;}
+      }
+    </style>
+</head>
+<body>
+    <h1>Военная техника</h1>
+    <div class="first"><img src="танк.jpg" class="tank"></div>
+    <div class="second"><img src="истребитель.jpg" class="istreb"></div>
+    <div class="third"><img src="вертолёт.jpg" class="helicopter"></div>
+    <div class="fourth"><img src="корабль.jpg" class="ship"></div>
+    
+</body>
+</html>

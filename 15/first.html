@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       img{
+        display: block;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+       }
+        div{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div" onmouseover="showText()" onmouseout="showImage()">
+        <img id="image1" src="2722809.jpg">
+    </div>
+
+    <img id="image2" src="C:\лабы\Барковский\15\животные\собака.webp" onclick="addBorder()" >
+
+    <img id="image3" src="C:\лабы\Барковский\15\животные\хомяк.jpg">
+
+    <img id="image4" src="белка.jpg" onmouseover="changeImage()" onmouseout="resetImage()">
+
+<script>
+      function showText() {
+         document.getElementById('div').innerHTML = 'Ко́шка — домашнее животное, одно из наиболее популярных «животных-компаньонов». С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных.';
+       }
+
+    function showImage() {
+      document.getElementById('div').innerHTML = '<img id="image1" src="2722809.jpg">';
+    }
+
+    function addBorder() {
+        if (document.getElementById('image2').style.border == "0px")
+        {
+            document.getElementById('image2').style.border = '10px solid red';
+        } 
+        else
+        {
+            document.getElementById('image2').style.border = '0px';
+        }
+    }
+
+
+    function changeImage() {
+         document.getElementById('image4').src = 'белка2.jpg';
+    }
+
+    function resetImage() {
+        document.getElementById('image4').src = 'белка.jpg';
+    }
+</script>
+
+</body>
+</html>

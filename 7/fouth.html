@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{margin-top: 200px;
+            display: inline-block;
+            position: relative;
+            perspective: 500px;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            
+        }
+        h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+        .tank{z-index: 1;  animation: tank 5s linear infinite;}
+        .istreb{z-index: 2;
+                right: 250px;
+                animation: istreb 5s linear infinite;
+                }
+        .helicopter{z-index: 3;
+                    right: 500px;
+                    animation: helicopter 5s linear infinite;
+                    }
+        .ship{z-index: 4;
+              right: 750px;
+              animation: ship 5s linear infinite;
+              }
+              @keyframes tank
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {}
+                75% {}
+                100% {}
+              }
+              @keyframes istreb
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {left: -250px;}
+                75% {left: 0px }
+                100% {left: 0px; filter: blur(10px);}
+              }
+              @keyframes helicopter
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {left: -500px;}
+                75% {left: 0px;}
+                100% {left: 0px; filter: grayscale(1);}
+              }
+              @keyframes ship
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {left:-750px;}
+                75% {left:0px}
+                100% {left:0px; filter:invert(1)}
+              }
+    </style>
+</head>
+<body>
+  <h1>Военная техника</h1>
+    <div class="tank"><img src="танк.jpg"></div>
+    <div class="istreb"><img src="истребитель.jpg"></div>
+    <div class="helicopter"><img src="вертолёт.jpg"></div>
+    <div class="ship"><img src="корабль.jpg"></div>
+</body>
+</html>

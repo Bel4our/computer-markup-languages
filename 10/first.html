@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link href="styl.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+          @media screen and (max-width: 600px) {
+            figcaption {
+                color: red;
+            }
+        }
+        .cont{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+         
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .head{width: 1200px;
+             margin-bottom: 30px;
+        }
+        h1{text-align: center;}
+        .item_1{
+            width: 460px;
+          
+        }
+        .item_2{width: 460px; padding: 5px;}
+        .item_3{width: 460px;}
+        iframe{padding: 2px;}
+        audio{
+           width: 460px;
+        }
+        main{ width: 98%; margin-top: 50px; margin-left: 40px;}
+        .menu_box{width: 100%; border:none; } 
+        .menu_item{
+            display: flex;
+            flex-flow: row;
+            border: none;
+        }
+        
+        #burger, .menu_btn{position: fixed; left: -100%;}
+        .menu_item label{ flex: 1 1 100px;}
+        .lab{
+            width: 80%;
+        }
+        label>a{
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid black;
+            height: 40px;
+            width: 98%;
+            text-align: center;
+        }
+        .menu{
+            position: fixed;
+            display: inline-block;
+            left: -98%;
+            width: 98%;
+            visibility: hidden;
+            border: none;
+        }
+        img{ width: 1400px; height: 900px;}
+        figure{text-align: center;}
+        .cars{margin-top: 200px;}
+       
+        @import url(style.css)(min-width:768px) and (max-width:1280px);
+       
+        @media(max-width: 580px){
+            a{width: 99%;
+            height: 40px;}
+            .menu_item{
+                display: block;
+                position: fixed;
+                width: 100%;
+                left: -110%;
+                border: none;
+            }
+            .menu{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu_btn{
+                position: relative;
+                left: -100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            .menu_btn>span::after{
+                content: "\2261";
+                position: absolute;
+                right: 10px;
+            }
+            #burger:checked~.menu_item{
+                position: static;
+            }
+            #burger:checked~.menu_item>label{
+                display: block;
+                margin-top: 5px;
+
+            }
+            #burger:checked~.menu{
+                visibility: visible;
+                left:  -2%;
+            }
+            #burger:not(:checked)~.menu_btn > span::after{
+                content: "\2573";
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cont">
+        <div class="head">
+           <h1>Flex-box вёрстка</h1>
+        </div>
+        <div class="item_1">
+            <a name="video"></a>
+            <iframe width="460" height="215" src="https://www.youtube.com/embed/eVZEwEQg4pg?si=0iKbnTtQHu1OoeHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="460" height="215" src="https://www.youtube.com/embed/orm8pLd80LU?si=pd5_PC5EosvtjBCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="460" height="215" src="https://www.youtube.com/embed/t2TZKG4Iypk?si=Ror9RryUIXr73eXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="item_2">
+            <a name="text"></a>Flexbox верстка — разметка макетов веб-страниц, которая
+            позволяет автоматически настраивать ширину элементов,
+            находящихся внутри flex-контейнера. Для применения данного
+            способа разметки следует учитывать разделение применяемых
+            свойств на свойства flex-контейнера и свойства flex-элемента.
+            С помощью display: flex; осуществляется преобразование
+            HTML-элемента в flex-контейнер, а элементы находящийся внутри
+            него в flex-элементы. По умолчанию flex-элементы помещаются
+            друг за другом в одной строке. Свойство flex-flow позволяет
+            выбрать направление отображения элементов в контейнере, а
+            также указать их перенос на следующую строку. Первое значение
+            определяет направление, а второе перенос на следующую строку.
+            Свойство flex-flow является сокращенной записью и содержит
+            значения свойств flex-direction и flex-wrap. Flex-элементы могут
+            размещаться в строке (значение row) или в колонке (значение column).
+            Перенос элементов осуществляется с помощью значения wrap.
+            Свойство justify-content определяет способ выключки flexэлементов в строке. Для выравнивания левому краю используется
+            значения flex-start, а по правому краю — flex-end. Для
+            равномерного распределения элементов создавая пространство
+            между ними необходимо значение space-between, а space-around
+            добавляет поля по левому и правому краям крайних элементов.
+            Свойство align-items определяет, как flex-элементы различной
+            высоты будут выровнены по высоте строки в flex-контейнере. Для
+            выравнивания верхнему краю используется значения flex-start, а
+            по нижнему краю — flex-end. Значение stretch позволяет
+            растянуть каждый элемент по высоте контейнера, делая их высоты
+            одинаковыми. Свойство align-content определяет как будут
+            размещены flex-элементы, занимающие несколько строк.
+            Для flex-элементов основным свойством являет flex, которое
+            обеспечивает их гибкость и управляет шириной, что позволяет
+            создавать «гибкие» колонки или изменять их ширину в
+            соответствии с размером контейнера, даже если размер неизвестен
+            или меняется динамически. Первое значение свойства flex —
+            число параметра flex-grow, которое указывает на относительную
+            ширину flex-элемента, которая определяет во сколько размеры
+            элементов отличаются между собой. Второе значение — число
+            свойства flex-shrink, которое определяет насколько flex-элемент
+            может быть сжат, если суммарная ширина элементов больше
+            ширины контейнера. Последнее значение — свойство flex-basis,
+            которое определяет базовую ши-рину flex-элемента.
+        </div>
+        <div class="item_3">
+            <a name="audio"></a>
+            <audio controls>
+                <source src="leave_rustling.mp3">
+            </audio>
+            <audio controls>
+                <source src="wind-drone-7.mp3">
+            </audio>
+            <audio controls>
+                <source src="928c33c50c6fb915.mp3">
+            </audio>
+        </div>
+    </div>
+   <main class="container">
+    <div class="menu_box"> 
+    <input type="checkbox" id="burger">
+    <label for="burger" class="menu_btn"><span></span></label>
+    <label class="menu">Меню</label>
+    <div class="menu_item">
+       <label class="lab"><a href="#video">Видео</a></label>
+       <label class="lab"><a href="#text">Тескт</a></label>
+       <label class="lab"><a href="#audio">аудио</a></label>
+    </div>
+   </div>
+   </main>
+   <div class="cars">
+    <figure>
+        <img src="aston — копия.jpg">
+        <figcaption>Астон-мартин</figcaption>
+    </figure>
+    <figure>
+        <img src="audi — копия.jpg">
+        <figcaption>Ауди</figcaption>
+    </figure>
+    <figure>
+        <img src="bentley — копия.jpg">
+        <figcaption>Бентли</figcaption>
+    </figure>
+    <figure>
+        <img src="bmw — копия.jpg">
+        <figcaption>БМВ</figcaption>
+    </figure>
+    <figure>
+        <img src="mazda — копия.webp">
+        <figcaption>Мазда</figcaption>
+    </figure>
+    <figure>
+        <img src="renault-megane-rs — копия.webp">
+        <figcaption>Рено</figcaption>
+    </figure>
+    <figure>
+        <img src="lambo — копия.webp">
+        <figcaption>Ламборгини</figcaption>
+    </figure>
+    <figure>
+        <img src="Кёнигсегг.webp">
+        <figcaption>Кёнигсегг</figcaption>
+    </figure>
+    
+   </div>
+</body>
+</html>

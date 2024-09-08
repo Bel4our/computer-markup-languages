@@ -1,0 +1,5 @@
+.a2:nth-child(even){background-color: black;}
+.a1:nth-child(odd){background-color: black;}
+
+    .a1, .a2{ width: 30px;
+        height: 30px;}

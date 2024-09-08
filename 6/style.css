@@ -1,0 +1,52 @@
+ul li {
+    list-style:none;
+    background-image: url(ImPS.gif);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: left top ;
+    padding-left: 20px;
+    }
+    body{
+    background-image: url(it_bstu.jpg);
+    background-repeat: no-repeat;
+    background-size: 8em;
+    background-position: 80em 10px;
+    background-attachment: fixed;
+    margin-top: 100px;
+    background-color: lightgray;
+    }
+    h1,h3,h2,h3{
+    text-align: center;
+    font-size: 40px;
+    }
+    p{
+    font-size: 25px;
+    text-align: center;
+    }
+    body:first-of-type h1{
+    color: red ;
+    }
+    span{color:blueviolet}
+    div img{
+    width: 400px;
+    height: 300px;
+    float: left}
+    div img[class="img"]{
+        float: right;
+    }
+    .hfir{color:blue}
+    .hsec{color:brown}
+    .hthir{color: green}
+    table, td ,tr{
+    border: 3px black solid;
+    }
+    .p1{
+    text-indent: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    }
+    h5{text-align: center;
+        font-size: 50px;
+      }
+

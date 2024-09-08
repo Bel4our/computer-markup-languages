@@ -1,0 +1,19 @@
+* {
+  background-color: #BDB76B;
+}
+
+div > h2 {
+  color: rgb(0, 250, 154);
+}
+
+h3 span {
+  color: yellow;
+}
+
+span {
+  text-decoration: line-through;
+}
+
+h1, h2, h3, p, img {
+  text-align: center;
+}

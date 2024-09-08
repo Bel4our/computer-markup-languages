@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="dop.xsl"?>
+<attestation>
+  <title>Аттестационный лист</title>
+  <student>
+  <name>Александрович Иван</name>
+  <CML>8</CML>
+  <FSE>2</FSE>
+  <BAAP>7</BAAP>
+  </student>
+  <student>
+  <name>Билый Александр</name>
+  <CML>6</CML>
+  <FSE>2</FSE>
+  <BAAP>10</BAAP>
+  </student>
+  <student>
+    <name>Дмитроченко Кирилл</name>
+    <CML>10</CML>
+    <FSE>2</FSE>
+    <BAAP>9</BAAP>
+    </student>
+  <student>
+  <name>Ковалевич Владислав</name>
+  <CML>6</CML>
+  <FSE>2</FSE>
+  <BAAP>5</BAAP>
+  </student>
+  <student>
+    <name>Кулешов Артём</name>
+    <CML>7</CML>
+    <FSE>2</FSE>
+    <BAAP>7</BAAP>
+    </student>
+    <student>
+  <name>Лужецкий Владислав</name>
+  <CML>9</CML>
+  <FSE>7</FSE>
+  <BAAP>10</BAAP>
+  </student>
+  <student>
+  <name>Обдуленко Вячеслав</name>
+  <CML>4</CML>
+  <FSE>2</FSE>
+  <BAAP>7</BAAP>
+  </student>
+  <student>
+  <name>Пузанко Иван</name>
+  <CML>6</CML>
+  <FSE>2</FSE>
+  <BAAP>10</BAAP>
+  </student>
+  <student>
+  <name>Рауба Арсений</name>
+  <CML>4</CML>
+  <FSE>2</FSE>
+  <BAAP>6</BAAP>
+  </student>
+  <student>
+  <name>Семёнов Даниил</name>
+  <CML>9</CML>
+  <FSE>2</FSE>
+  <BAAP>10</BAAP>
+  </student>
+  <student>
+    <name>Смольянинов Глеб</name>
+    <CML>7</CML>
+    <FSE>2</FSE>
+    <BAAP>7</BAAP>
+    </student>
+    <student>
+      <name>Статько Герман</name>
+      <CML>9</CML>
+      <FSE>2</FSE>
+      <BAAP>10</BAAP>
+      </student>
+      <student>
+        <name>Такун Александр</name>
+        <CML>8</CML>
+        <FSE>2</FSE>
+        <BAAP>8</BAAP>
+        </student>
+        <student>
+          <name>Федорович Вадим</name>
+          <CML>9</CML>
+          <FSE>2</FSE>
+          <BAAP>8</BAAP>
+          </student>
+          <student>
+            <name>Чемурако Иван</name>
+            <CML>9</CML>
+            <FSE>2</FSE>
+            <BAAP>10</BAAP>
+            </student>
+</attestation>

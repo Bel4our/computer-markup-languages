@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{margin-top: 100px; margin-left: 20px; }
+        div {margin-left: 500px;}
+        .first:hover{background-color: black; color: white;}
+        .second:hover{border: 5px solid red;
+            outline: solid 6px  yellow}
+        .third:hover{border-top: 5px solid green; border-bottom: 5px solid green; background-color: white; border-left: 0px; border-right: 0px;}
+        .fourth:hover{border-left: 5px solid blue; border-right: 5px solid blue; background-color: white; border-top: 0px; border-bottom: 0px;}
+        .fivth:hover{background-image: radial-gradient(yellow 1px, magenta 45%, blue, rgb(128, 166, 255) 75%, white 95%)}
+        h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+    </style>
+</head>
+<body>
+    <h1>Кнопки</h1>
+    <div>
+    <button class="first">Включить</button>
+    <button class="second">Выключить</button>
+    <button class="third">Создать</button>
+    <button class="fourth">Удалить</button>
+    <button class="fivth">Отмена</button>
+    </div>
+</body>
+</html>

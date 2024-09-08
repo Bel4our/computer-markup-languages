@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        img{width: 90px; height: 90px;}
+        .three.columns{height: 200px;}
+        /*.two.columns{width: 9%; height:100px; border: 1px black solid;}
+       .ten.columns{width: 90%; height: 100px;margin: 0;align-content: center;}
+        .three.columns{width: 24%;}*/
+        li {display: inline; padding-right: 5%; font-size: 15px;}
+        ul{width: 600px; position: relative; top: 35px; list-style: none; text-align: center;}
+        div{display: inline-block;}
+        .row, .row1, .row2{margin-top: 5px; margin-right: 5px; margin-left: 5px;}
+        .row2{height: 50px;}
+        .cont{max-width: 1560px;}
+        .h3{height: 100px; width: 420px;}
+        .columns{padding-right: 5%;}
+        .row1{margin-left: 450px;}
+        p{margin-left: 5px;}
+        </style>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/skeleton.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cont">
+        <div class="row1">
+            <div class="two columns">
+                <img src="it_bstu.jpg">
+            </div>
+            <div class="ten columns">
+                <nav>
+                      <ul>
+                        <li><a href="first.html">1 страница</a></li>
+                        <li><a href="second.html">2 страница</a></li>
+                        <li><a href="third.html">3 страница</a></li>
+                        <li><a href="fourth.html">4 страница</a></li>
+                        <li><a href="five.html">5 страница</a></li>
+                      </ul>
+                      </nav>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="three columns">
+               <h3 class="h3">Что такое Grid?</h3>
+            </div>
+            <div class="three columns">
+            <h3 class="h3">Грид-контейнер</h3>
+            </div>
+            <div class="three columns">
+            <h3 class="h3">Грид-треки</h3>
+            </div>
+            <div class="three columns">
+            <h3 class="h3">Грид-линии</h3>
+            </div>
+        </div>      
+        <div class="row">
+            <div class="three columns">
+               <p> Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, 
+                образующих колонки и строки. Элементы могут быть помещены в грид в пределах линий этих колонок и строк. </p>
+            </div>
+            <div class="three columns">
+                <p>
+                Мы создаём grid контейнер, объявляя на элементе display: grid или display: inline-grid. Как только мы
+                 это сделаем, все прямые потомки этого элемента станут элементами сетки.</p>
+            </div>
+            <div class="three columns">
+               <p>Мы определяем ряды и колонки в нашей сетке при помощи свойств grid-template-columns и grid-template-rows. Это определения 
+                грид-треков (грид-полос). Грид-трек – это промежуток между любыми двумя линиями грида.</p>
+            </div>
+            <div class="three columns"><p>
+                Нужно заметить, что когда мы определяем грид, мы определяем грид-треки, а не грид-линии.
+                 После этого грид обеспечивает нас пронумерованными линиями, для использования при размещении элементов.</p> 
+            </div>
+        </div>            
+    </div>
+</body>
+</html>

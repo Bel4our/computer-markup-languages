@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @keyframes img{
+      0%, 10%, 100% {background-image: url(cat.jpg);}
+      20%, 30% {background-image: url(kot\ Fedya.jpeg);}
+      40%, 50% {background-image: url(селфи.jpg);}
+      60%, 70% {background-image: url(зорро.jpg);}
+      80%, 90% {background-image: url(лесной\ кот.jpg);}
+    }
+
+  div{
+  animation: img 5s ease-in infinite;
+  margin-left: 600px;
+  margin-top: 50px;
+  width: 350px;
+  height: 350px;
+  border: 3px solid red;
+  background-size: cover;
+   }
+   h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+    </style>
+</head>
+<body>
+  <h1>Коты</h1>
+    <div>
+    </div>
+</body>
+</html>

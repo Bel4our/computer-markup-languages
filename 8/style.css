@@ -1,0 +1,192 @@
+
+.d1{text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+img{width: 500px; height: 300;}
+.mercury:hover{transform: scale(0.5);}
+.venus:hover{transform:rotate(45deg)}
+.earth:hover{transform: translate(50px,0px);}
+.mars:hover{transform: rotate(-20deg);}
+
+
+
+.tank, .istreb, .helicopter, .ship{
+        height: 200px;
+        width: 350px;
+        margin-left: 20px;}
+    .first, .second, .third, .fourth{text-align: center;
+        margin-top: 50px;
+        display: inline-block;}
+    .tank{transform: rotateX(40deg);}
+    .first{perspective: 800px;}
+    .istreb{transform: rotateY(40deg);}
+    .second{perspective: 700px}
+    .helicopter{transform: rotateX(40deg);}
+    .third{perspective:500px;}
+    .ship{transform: rotateY(-40deg);}
+    .fourth{perspective: 600px;}
+
+
+
+    button{ margin-left: 20px; }
+    .div {margin-left: 500px;}
+    .first1:hover{background-color: black; color: white;}
+    .second2:hover{border: 5px solid red;
+        outline: solid 6px  yellow}
+    .third3:hover{border-top: 5px solid green; border-bottom: 5px solid green; background-color: white; border-left: 0px; border-right: 0px;}
+    .fourth4:hover{border-left: 5px solid blue; border-right: 5px solid blue; background-color: white; border-top: 0px; border-bottom: 0px;}
+    .fivth5:hover{background-image: radial-gradient(yellow 1px, magenta 45%, blue, rgb(128, 166, 255) 75%, white 95%)}
+
+
+
+
+    .tank1, .ship1, .helicopter1, .istreb1{margin-top: 200px;
+            display: inline-block;
+            position: relative;
+            perspective: 500px;
+        }
+        .hel, .ist, .tan, .shi{
+            height: 300px;
+            width: 300px;
+            
+        }
+        h1{text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+        .tank1{z-index: 1;  animation: tank 5s linear infinite;}
+        .istreb1{z-index: 2;
+                right: 250px;
+                animation: istreb 5s linear infinite;
+                }
+        .helicopter1{z-index: 3;
+                    right: 500px;
+                    animation: helicopter 5s linear infinite;
+                    }
+        .ship1{z-index: 4;
+              right: 750px;
+              animation: ship 5s linear infinite;
+              }
+              @keyframes tank
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {}
+                75% {}
+                100% {}
+              }
+              @keyframes istreb
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {left: -250px;}
+                75% {left: 0px }
+                100% {left: 0px; filter: blur(10px);}
+              }
+              @keyframes helicopter
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {left: -500px;}
+                75% {left: 0px;}
+                100% {left: 0px; filter: grayscale(1);}
+              }
+              @keyframes ship
+              {
+                0% {transform: rotateY(40deg); }
+                15%{transform: rotateY(40deg);}
+                25% {transform: rotateY(0deg); perspective:10000px}
+                50% {left:-750px;}
+                75% {left:0px}
+                100% {left:0px; filter:invert(1)}
+              }
+
+
+
+
+              @keyframes img{
+                0%, 10%, 100% {background-image: url(cat.jpg);}
+                20%, 30% {background-image: url(kot\ Fedya.jpeg);}
+                40%, 50% {background-image: url(селфи.jpg);}
+                60%, 70% {background-image: url(зорро.jpg);}
+                80%, 90% {background-image: url(лесной\ кот.jpg);}
+              }
+          
+            .caat{
+            animation: img 5s ease-in infinite;
+            margin-left: 600px;
+            margin-top: 50px;
+            width: 350px;
+            height: 350px;
+            border: 3px solid red;
+            background-size: cover;
+             }
+             
+
+
+
+             .img2{width: 300px; height: 200px;}
+             .first22{animation: first 3s linear infinite; position: relative;}
+             @keyframes first{
+                 from{left: 0px;}
+                 50%{left: 200px}
+                 to{left: 0px}
+             }
+             .second22{animation: second 5s linear infinite; position: relative;}
+             @keyframes second{
+                 from{left: 0px;}
+                 50%{left: 200px; border-radius: 100px;}
+                 to{left: 0px}
+             }
+             .third22{animation: third 5s linear infinite; position: relative;}
+             @keyframes third{
+                 from{left: -400px;}
+                 to{left: 1800px; }
+                 
+             }
+             .fourth22{animation: fourth 1s linear infinite; position: relative;}
+             @keyframes fourth{
+                 from{transform: translateY(0px);}
+                 50%{transform: translateY(50px);}
+                 to{transform: translateY(0px);}
+             }
+             .five22{animation: five 5s linear infinite; position: relative;}
+             @keyframes five{
+                 0%{left: 0px; top: 0px}
+                 25%{left: 200px; top: 0px}     
+                 50%{left: 200px; top: 200px}
+                 75%{left: 0px; top: 200px}
+                 100%{left: 0px; top: 0px}       
+             }
+
+
+
+
+             .div1{margin-left: 600px;
+                margin-top: 100px;
+                height: 300px;
+                width: 300px;
+                border: 1px black solid;
+                color: red;
+                overflow: hidden;
+            }
+            .div1:hover {
+                animation: around 5s linear infinite;
+                        }
+                        @keyframes around {
+        0% {color: blue; }
+        25% {color: green}
+        50% {color: yellow; }
+        75% {color: purple; }
+        100% {color: coral;}
+        }
+
+
+
+
+        

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{margin-left: 600px;
+            margin-top: 200px;
+            height: 300px;
+            width: 300px;
+            border: 1px black solid;
+            color: red;
+            overflow: hidden;
+        }
+        div:hover {
+            animation: around 5s linear infinite;
+                    }
+                    @keyframes around {
+    0% {color: blue; }
+    25% {color: green}
+    50% {color: yellow; }
+    75% {color: purple; }
+    100% {color: coral;}
+    }
+    h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+
+
+    </style>
+</head>
+<body>
+    <h1>Блок</h1>
+    <div>
+        Являясь "чистым" контейнером, элемент , по существу, не представляет ничего.
+         Между тем, он используется для группировки контента, что позволяет легко его 
+         стилизовать, используя атрибуты class или id, помечать раздел документа, написанный 
+         на разных языках (используя атрибут lang), и так далее.Элемент является блочным элементом
+          и предназначен для выделения фрагмента документа с целью изменения вида содержимого.
+           Как правило, вид блока управляется с помощью стилей. Чтобы не описывать каждый раз 
+           стиль внутри тега, можно выделить стиль во внешнюю таблицу стилей, а для тега добавить 
+           атрибут class или id с именем селектора. Как и при использовании других блочных элементов,
+            содержимое тега всегда начинается с новой строки. После него также добавляется перенос строк
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width: 300px; height: 200px;}
+        .first{animation: first 3s linear infinite; position: relative;}
+        @keyframes first{
+            from{left: 0px;}
+            50%{left: 200px}
+            to{left: 0px}
+        }
+        .second{animation: second 5s linear infinite; position: relative;}
+        @keyframes second{
+            from{left: 0px;}
+            50%{left: 200px; border-radius: 100px;}
+            to{left: 0px}
+        }
+        .third{animation: third 5s linear infinite; position: relative;}
+        @keyframes third{
+            from{left: -400px;}
+            to{left: 1800px; }
+            
+        }
+        .fourth{animation: fourth 1s linear infinite; position: relative;}
+        @keyframes fourth{
+            from{transform: translateY(0px);}
+            50%{transform: translateY(50px);}
+            to{transform: translateY(0px);}
+        }
+        .five{animation: five 5s linear infinite; position: relative;}
+        @keyframes five{
+            0%{left: 0px; top: 0px}
+            25%{left: 200px; top: 0px}     
+            50%{left: 200px; top: 200px}
+            75%{left: 0px; top: 200px}
+            100%{left: 0px; top: 0px}       
+        }
+        h1{animation: h1 5s linear infinite; text-align: center;}
+   @keyframes h1{
+    from{color: black; opacity: 0;}
+    100%{opacity: 0.8;}
+      }
+    </style>
+</head>
+<body>
+    <h1>Коты</h1>
+  <div><img src="cat.jpg" class="first"></div>
+  <div><img src="cat.jpg" class="second"></div>
+  <div><img src="cat.jpg" class="third"></div>
+  <div><img src="cat.jpg" class="fourth"></div>
+  <div><img src="cat.jpg" class="five"></div>
+</body>
+</html>

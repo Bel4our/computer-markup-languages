@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+</head>
+<body>
+    <form>
+
+         <h1>Данные студента</h1>
+
+       <div >
+            <label for="name">Имя студента</label>
+            <input type="text" id="name" required placeholder="Обязательно заполнить"><br>
+
+            <label for="patronymic">Отчество студента</label>
+            <input type="text" id="patronymic" required placeholder="обязательно заполнить"><br>
+
+            <label for="surname">Фамилия студента</label>
+            <input type="text" id="surname" required placeholder="обязательно заполнить"><br>
+
+            <label for="email">Адрес почты</label>
+            <input type="text" id="email"><br>
+
+            <label for="contact">Контактный номер</label>
+            <input type="text" id="contact"><br>
+
+            <label>Какую социальную сеть вы используете?</label><br>
+            <input type="checkbox" id="vk" value="VK">
+            <label for="vk">VK</label><br>
+            <input type="checkbox" id="facebook" value="Facebook">
+            <label for="facebook">Facebook</label><br>
+            <input type="checkbox" id="instagram" value="Instagram">
+            <label for="instagram">Instagram</label><br>
+
+            <label for="faculty">Факультет</label>
+            <select id="faculty">
+                <option value="ФИТ">ФИТ</option>
+                <option value="ЛЕСХОЗ">ЛХФ</option>
+                <option value="ХТИТ">ХТИТ</option>
+                <option value="ТОВ">ТОВ</option>
+                <option value="ПИМ">ПИМ</option>
+            </select><br>
+
+            <label for="group">Группа</label>
+            <select id="group">
+                <option value="Группа 1">Группа 1</option>
+                <option value="Группа 2">Группа 2</option>
+                <option value="Группа 3">Группа 3</option>
+                <option value="Группа 4">Группа 4</option>
+                <option value="Группа 5">Группа 5</option>
+                <option value="Группа 6">Группа 6</option>
+                <option value="Группа 7">Группа 7</option>
+                <option value="Группа 8">Группа 8</option>
+                <option value="Группа 9">Группа 9</option>
+                <option value="Группа 10">Группа 10</option>
+
+            </select><br>
+
+            <label for="course">Курс</label>
+            <select id="course">
+                <option value="1 курс">1 курс</option>
+                <option value="2 курс">2 курс</option>
+                <option value="3 курс">3 курс</option>
+                <option value="4 курс">4 курс</option>
+            </select><br><br>
+
+            <button type="button" onclick="displayFormValues()">Отправить</button>
+        </div>
+    </form>
+
+    <footer id="formValues"></footer>
+
+    <script>
+    function displayFormValues() {
+    const name = document.getElementById('name').value;
+    const patronymic = document.getElementById('patronymic').value;
+    const surname = document.getElementById('surname').value;
+    const email = document.getElementById('email').value;
+    const contact = document.getElementById('contact').value;
+    const vk = document.getElementById('vk').checked ? 'VK' : '';
+    const facebook = document.getElementById('facebook').checked ? 'Febacook' : '';
+    const instagram = document.getElementById('instagram').checked ? 'Instagram' : '';
+    const faculty = document.getElementById('faculty').value;
+    const group = document.getElementById('group').value;
+    const course = document.getElementById('course').value;
+
+    const formValues = `
+        <p>Имя студента: ${name}</p>
+        <p>Отчество студента: ${patronymic}</p>
+        <p>Фамилия студента: ${surname}</p>
+        <p>Адрес почты: ${email}</p>
+        <p>Контактный номер: ${contact}</p>
+        <p>Какую социальную сеть вы используете?: ${vk} ${facebook} ${instagram}</p>
+        <p>Факультет: ${faculty}</p>
+        <p>Группа: ${group}</p>
+        <p>Курс: ${course}</p>
+    `;
+
+    document.getElementById('formValues').innerHTML = formValues;
+}
+</script>
